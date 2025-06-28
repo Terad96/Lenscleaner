@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JadeerEssentials Lens Cleaner - See the World Clearly!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header/Navigation Bar -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg p-4">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-0">
+            <a href="#" class="text-2xl font-bold rounded-md hover:opacity-80 transition-opacity">JadeerEssentials</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:text-blue-200 transition-colors p-2 rounded-md">Features</a>
+                <a href="#how-to-use" class="hover:text-blue-200 transition-colors p-2 rounded-md">How to Use</a>
+                <a href="#testimonials" class="hover:text-blue-200 transition-colors p-2 rounded-md">Testimonials</a>
+                <a href="#buy-now" class="bg-white text-blue-700 px-5 py-2 rounded-full font-semibold shadow-md hover:bg-gray-100 transition-colors">Buy Now</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-blue-700 bg-opacity-95 z-50 flex flex-col items-center justify-center space-y-8 text-2xl">
+            <button id="close-menu-button" class="absolute top-6 right-6 text-white focus:outline-none">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="#features" class="text-white hover:text-blue-200 transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Features</a>
+            <a href="#how-to-use" class="text-white hover:text-blue-200 transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">How to Use</a>
+            <a href="#testimonials" class="text-white hover:text-blue-200 transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Testimonials</a>
+            <a href="#buy-now" class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Buy Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-500 to-purple-600 text-white py-20 md:py-32 overflow-hidden shadow-inner">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-0">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                    Experience Unmatched Clarity.
+                </h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up delay-100">
+                    Introducing JadeerEssentials Lens Cleaner – the ultimate solution for streak-free, crystal-clear vision.
+                </p>
+                <a href="#buy-now" class="bg-white text-blue-700 px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 animate-fade-in-up delay-200">
+                    Get Yours Today!
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end relative">
+                <!-- Placeholder for product image -->
+                <img src="https://f.nooncdn.com/p/pzsku/ZA49ED8708A5AA5A33135Z/45/_/1715974986/daedafcd-cade-430f-9527-d5637ab2b18f.jpg?width=800" alt="JadeerEssentials Lens Cleaner Product" class="w-64 md:w-80 lg:w-96 rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-blue-400 opacity-20 rounded-full animate-pulse-slow hidden md:block"></div>
+                <div class="absolute -top-12 -left-12 w-32 h-32 bg-purple-400 opacity-20 rounded-full animate-pulse-slow delay-300 hidden md:block"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-0">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-700">Why JadeerEssentials?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center flex flex-col items-center">
+                    <div class="bg-blue-200 p-4 rounded-full mb-6">
+                        <svg class="w-10 h-10 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.276a11.952 11.952 0 01-.58 4.276M14.25 10.25a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0zM12 2a10 10 0 100 20 10 10 0 000-20z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">Streak-Free Shine</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our advanced formula ensures a spotless, streak-free finish every time, enhancing your visual clarity.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center flex flex-col items-center">
+                    <div class="bg-blue-200 p-4 rounded-full mb-6">
+                        <svg class="w-10 h-10 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">Safe for All Lenses</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Gentle yet effective, JadeerEssentials is safe for anti-reflective coatings, eyeglasses, cameras, and more.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center flex flex-col items-center">
+                    <div class="bg-blue-200 p-4 rounded-full mb-6">
+                        <svg class="w-10 h-10 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">Quick Drying Formula</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our fast-drying solution leaves no residue, meaning your lenses are ready to use almost instantly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="how-to-use" class="py-16 bg-blue-700 text-white">
+        <div class="container mx-auto px-4 md:px-0">
+            <h2 class="text-4xl font-bold text-center mb-12">Simple Steps to Sparkling Lenses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-blue-800 p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="bg-blue-600 text-white text-3xl font-bold w-16 h-16 flex items-center justify-center rounded-full mb-6 border-4 border-blue-400">1</div>
+                    <h3 class="text-2xl font-semibold mb-3">Spray</h3>
+                    <p class="text-blue-200 leading-relaxed">
+                        Hold the JadeerEssentials bottle about 6 inches from your lens and spray a light mist on both sides.
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-blue-800 p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="bg-blue-600 text-white text-3xl font-bold w-16 h-16 flex items-center justify-center rounded-full mb-6 border-4 border-blue-400">2</div>
+                    <h3 class="text-2xl font-semibold mb-3">Wipe</h3>
+                    <p class="text-blue-200 leading-relaxed">
+                        Gently wipe the lenses with a clean, soft microfiber cloth (included with purchase) until dry.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-blue-800 p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="bg-blue-600 text-white text-3xl font-bold w-16 h-16 flex items-center justify-center rounded-full mb-6 border-4 border-blue-400">3</div>
+                    <h3 class="text-2xl font-semibold mb-3">Enjoy</h3>
+                    <p class="text-blue-200 leading-relaxed">
+                        Experience pristine clarity! Your lenses are now free of smudges, dust, and grime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-0">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-700">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-blue-500 hover:shadow-lg transition-shadow">
+                    <p class="text-lg italic mb-6 text-gray-700">
+                        "JadeerEssentials is a game-changer! My glasses have never been so clean. No streaks, no fuss, just perfect clarity. Highly recommend it!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/d1d5db/374151?text=A" alt="Customer Avatar" class="w-14 h-14 rounded-full mr-4 border-2 border-blue-300">
+                        <div>
+                            <p class="font-semibold text-blue-800">Alice L.</p>
+                            <p class="text-sm text-gray-500">Avid Photographer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-indigo-500 hover:shadow-lg transition-shadow">
+                    <p class="text-lg italic mb-6 text-gray-700">
+                        "As someone who wears glasses all day, I've tried countless cleaners. JadeerEssentials is by far the best. My vision is truly crystal clear now!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/d1d5db/374151?text=B" alt="Customer Avatar" class="w-14 h-14 rounded-full mr-4 border-2 border-indigo-300">
+                        <div>
+                            <p class="font-semibold text-indigo-800">Bob M.</p>
+                            <p class="text-sm text-gray-500">Daily Glasses Wearer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Buy Now Section -->
+    <section id="buy-now" class="py-20 bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-center shadow-inner">
+        <div class="container mx-auto px-4 md:px-0">
+            <h2 class="text-4xl font-bold mb-8">Ready to See the World Differently?</h2>
+            <p class="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
+                Order your JadeerEssentials Lens Cleaner today and say goodbye to smudges and hello to unmatched clarity!
+            </p>
+            <a href="https://www.noon.com/saudi-en/premium-eyeglass-cleaning-solution-microfiber-cloth-kit-safe-for-all-lenses/ZA49ED8708A5AA5A33135Z/p/?o=za49ed8708a5aa5a33135z-1&shareId=503c9aed-2d79-4c5f-9917-0d8173f3fe69" class="bg-white text-blue-700 px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                Shop Now for JadeerEssentials!
+            </a>
+            <p class="text-sm mt-6 text-blue-200">Free shipping on all orders over 100 SAR!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto text-center px-4 md:px-0">
+            <p>&copy; 2025 JadeerEssentials Lens Cleaner. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuButton = document.getElementById('close-menu-button');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when a link inside it is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+    </script>
+</body>
+</html>
